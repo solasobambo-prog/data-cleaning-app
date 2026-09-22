@@ -34,4 +34,5 @@ Open the local URL printed in the terminal. Load a spreadsheet in the UI; nothin
 
 ## License
 
-MIT — see [LICENSE.md](LICENSE.md).
+MIT, see [LICENSE](LICENSE).
+
