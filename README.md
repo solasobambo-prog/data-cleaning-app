@@ -17,6 +17,10 @@ If a future feature needs the network (for example, loading the app itself or op
 
 Week 1 — environment setup in progress. Cleaning workflows are not available yet.
 
+## Update
+
+In active development. Routing, health check, and accessible modal/tabs/disclosure components are in place. Cleaning, profiling, and AI insight features are not yet built.
+
 ## Stack
 
 React (Vite), Tailwind CSS, JavaScript (ES6+)
@@ -35,4 +39,3 @@ Open the local URL printed in the terminal. Load a spreadsheet in the UI; nothin
 ## License
 
 MIT, see [LICENSE.md](LICENSE.md).
-
