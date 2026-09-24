@@ -47,8 +47,6 @@ export function Tabs({ tabs, defaultTabId }: TabsProps) {
     }
   }
 
-  const activeTab = tabs.find((tab) => tab.id === activeId) ?? tabs[0];
-
   return (
     <div>
       <div role="tablist" aria-label="Example tabs" className="flex gap-2 border-b">
@@ -76,17 +74,19 @@ export function Tabs({ tabs, defaultTabId }: TabsProps) {
           );
         })}
       </div>
-      {activeTab && (
+      {tabs.map((tab) => (
         <div
+          key={tab.id}
           role="tabpanel"
-          id={`panel-${activeTab.id}`}
-          aria-labelledby={`tab-${activeTab.id}`}
+          id={`panel-${tab.id}`}
+          aria-labelledby={`tab-${tab.id}`}
           tabIndex={0}
+          hidden={tab.id !== activeId}
           className="p-4"
         >
-          {activeTab.panel}
+          {tab.panel}
         </div>
-      )}
+      ))}
     </div>
   );
 }
